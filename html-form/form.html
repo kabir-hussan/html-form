@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            background-color: rgb(166, 226, 226);
+        }
+        label{
+            display:block;
+            margin-bottom: 10px;
+        }
+        section > h2{
+            margin-bottom: 5px;
+            
+        }
+        section{
+          
+            padding: 15px;
+           
+        }
+
+        fieldset{
+            width: 25%;
+            border: 2px solid;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        legend{
+            border:2px solid rgb(21, 29, 6);
+        }
+
+        .header{
+            text-align: right;
+            /* padding: 10px; */
+            
+        }
+
+        header > nav > ul > li{
+            display:inline;
+           
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            margin-right: 20px;
+            color: rgb(16, 17, 14);
+            /* font-size: 20px; */
+           
+        }
+
+        a:hover{
+            background-color: rgb(219, 197, 236);
+            padding: 5px 10px;
+            
+        }
+
+        .background{
+            background-color: rgba(98, 226, 130, 0.726);
+            
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Please fillup The Form</h2>
+            <form >
+                <label for="name"> Your Name:
+                    <input type="text" id="name" placeholder="Enter Your Name"> 
+                </label>
+                <label for="email"> Your Email:
+                    <input type="email" id="email" placeholder="Enter Your Email"> 
+                </label>
+                <label for="phone"> Your Phone:
+                    <input type="text" id="phone" placeholder="Enter Your Phone"> 
+                </label>
+
+               <fieldset>
+                <legend>Pick One Pitha</legend>
+                <label for="chitoy">
+                    <input type="radio" name="pitha" id="chitoy">Chitoy
+                </label>
+
+                <label for="vapa">
+                    <input type="radio" name="pitha" id="vapa">Vaapa
+                </label>
+
+                <label for="sondesh">
+                    <input type="radio" name="pitha" id="sondesh">Sondesh
+                </label>
+               </fieldset>
+
+               <fieldset>
+                <legend>Select The Fruits</legend>
+                <label for="apple">
+                    <input type="checkbox" name="apple" id="apple">Apple
+                </label>
+
+                <label for="orange">
+                    <input type="checkbox" name="orange" id="orange">Orange
+                </label>
+
+                <label for="banana">
+                    <input type="checkbox" name="banana" id="banana">Banana
+                </label>
+               </fieldset>
+
+               <fieldset>
+                <legend>Your Comment</legend>
+                <textarea class="background" name="" id="" cols="30" rows="10"></textarea>
+               </fieldset>
+
+               <input type="reset" value="Reset">
+               <input type="submit" value="Submit">
+
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
